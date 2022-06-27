@@ -44,7 +44,7 @@
                 string authKey = configuration["AuthorizationKey"];
                 if (string.IsNullOrEmpty(authKey) || string.Equals(authKey, "Super secret key"))
                 {
-                    kthrow new ArgumentException("Please specify a valid AuthorizationKey in the appSettings.json");
+                    throw new ArgumentException("Please specify a valid AuthorizationKey in the appSettings.json");
                 }
 
                 //Read the Cosmos endpointUrl and authorisationKeys from configuration
