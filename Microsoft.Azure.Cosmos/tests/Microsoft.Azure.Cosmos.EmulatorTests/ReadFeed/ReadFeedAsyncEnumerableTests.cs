@@ -122,7 +122,7 @@ namespace Microsoft.Azure.Cosmos.ReadFeed
             foreach (IAsyncEnumerable<TryCatch<ReadFeedPage>> asyncEnumerable in asyncEnumerables)
             {
                 // This part can be done in parallel on the same machine or on different machines,
-                // since they are independant enumerables.
+                // since they are independent enumerables.
                 (int totalCount, ReadFeedCrossFeedRangeState? state) countAndState = await DrainAllAsync(asyncEnumerable);
                 totalCount += countAndState.totalCount;
             }

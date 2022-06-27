@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 Documents", "00 Document
 		..\..\Work\Documents\Cosmos DB\Notes.yaml = ..\..\Work\Documents\Cosmos DB\Notes.yaml
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queries", "Microsoft.Azure.Cosmos.Samples\Usage\Queries\Queries.csproj", "{0E815908-6F26-4C32-8A2D-094A5ABFB145}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Microsoft.Azure.Cosmos.Samples\Usage\Shared\Shared.csproj", "{B9F88C3C-F51F-4001-8CFE-4795738656FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Cover|Any CPU = Cover|Any CPU
@@ -167,6 +171,30 @@ Global
 		{B5B3631D-AC2F-4257-855D-D6FE12F20B60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5B3631D-AC2F-4257-855D-D6FE12F20B60}.Release|x64.ActiveCfg = Release|Any CPU
 		{B5B3631D-AC2F-4257-855D-D6FE12F20B60}.Release|x64.Build.0 = Release|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Cover|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Cover|Any CPU.Build.0 = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Cover|x64.ActiveCfg = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Cover|x64.Build.0 = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Debug|x64.Build.0 = Debug|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Release|x64.ActiveCfg = Release|Any CPU
+		{0E815908-6F26-4C32-8A2D-094A5ABFB145}.Release|x64.Build.0 = Release|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Cover|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Cover|Any CPU.Build.0 = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Cover|x64.ActiveCfg = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Cover|x64.Build.0 = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{B9F88C3C-F51F-4001-8CFE-4795738656FA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
