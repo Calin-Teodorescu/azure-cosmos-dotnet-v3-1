@@ -438,7 +438,7 @@
         // <GetOrCreateContainerAsync>
         private static async Task<Container> GetOrCreateContainerAsync(Database database, string containerId)
         {
-            ContainerProperties containerProperties = new ContainerProperties(id: containerId, partitionKeyPath: "/LastName");
+            ContainerProperties containerProperties = new ContainerProperties(id: containerId, partitionKeyPath: "/DeviceId");
 
             return await database.CreateContainerIfNotExistsAsync(
                 containerProperties: containerProperties,
