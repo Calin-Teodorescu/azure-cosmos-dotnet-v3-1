@@ -328,3 +328,4 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/Microsoft.Azure.Cosmos.Samples/Usage/Queries/appSettings.noGit.json

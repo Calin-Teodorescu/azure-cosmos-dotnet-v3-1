@@ -20,8 +20,8 @@
     internal class Program
     {
         //Read configuration
-        private static readonly string CosmosDatabaseId = "samples";
-        private static readonly string containerId = "query-samples";
+        private static readonly string CosmosDatabaseId = "realtimetwindb";
+        private static readonly string containerId      = "eventDumpLargePKey";
 
         private static Database cosmosDatabase = null;
 
@@ -32,7 +32,7 @@
             try
             {
                 IConfigurationRoot configuration = new ConfigurationBuilder()
-                    .AddJsonFile("appSettings.json")
+                    .AddJsonFile("appSettings.noGit.json")
                     .Build();
 
                 string endpoint = configuration["EndPointUrl"];
@@ -78,15 +78,15 @@
             cosmosDatabase = await client.CreateDatabaseIfNotExistsAsync(CosmosDatabaseId);
             Container container = await Program.GetOrCreateContainerAsync(cosmosDatabase, containerId);
 
-            await Program.CreateItems(container);
-
-            await Program.ItemFeed(container);
-
-            await Program.ItemStreamFeed(container);
-
-            await Program.QueryItemsInPartitionAsStreams(container);
-
-            await Program.QueryPartitionedContainerInParallelAsync(container);
+            // await Program.CreateItems(container);
+            // 
+            // await Program.ItemFeed(container);
+            // 
+            // await Program.ItemStreamFeed(container);
+            // 
+            // await Program.QueryItemsInPartitionAsStreams(container);
+            // 
+            // await Program.QueryPartitionedContainerInParallelAsync(container);
 
             await Program.QueryWithSqlParameters(container);
 
